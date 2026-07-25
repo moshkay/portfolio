@@ -1,0 +1,16 @@
+services:
+  portfolio:
+    image: ${PORTFOLIO_IMAGE}
+    container_name: portfolio
+    restart: unless-stopped
+    # Bind to loopback only; Nginx on the host terminates TLS and proxies in.
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      - PORT=8080
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
