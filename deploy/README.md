@@ -46,7 +46,7 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl reload nginx
 
 # Point your domain's A record at the EC2 public IP first, then:
-sudo certbot --nginx -d example.com -d www.example.com
+sudo certbot --nginx -d moshcore.com.ng -d www.moshcore.com.ng
 ```
 
 Certbot rewrites the config to add the `443` server block and sets up auto-renewal.

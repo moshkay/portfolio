@@ -65,8 +65,8 @@ func defaultPortfolio() Portfolio {
 		},
 		Socials: []Social{
 			{Label: "GitHub", URL: "https://github.com/moshkay", Icon: iconGitHub},
-			{Label: "LinkedIn", URL: "https://linkedin.com/", Icon: iconLinkedIn},
-			{Label: "X", URL: "https://x.com/esemkay", Icon: iconX},
+			{Label: "LinkedIn", URL: "https://www.linkedin.com/in/saliu-moshood-a1b7421ab/", Icon: iconLinkedIn},
+			{Label: "X", URL: "https://x.com/hemkayo", Icon: iconX},
 		},
 		Skills: []SkillGroup{
 			{Category: "Languages", Items: []string{"Python", "Go", "JavaScript", "Java", "TypeScript", "SQL"}},
@@ -103,7 +103,7 @@ func defaultPortfolio() Portfolio {
 				Title:       "Portfolio Website",
 				Description: "This site — a single self-contained Go binary that embeds its templates and assets. No external dependencies.",
 				Tags:        []string{"Go", "net/http", "embed"},
-				RepoURL:     "https://github.com/",
+				RepoURL:     "https://github.com/moshkay/portfolio",
 				LiveURL:     "",
 				Featured:    false,
 			},
