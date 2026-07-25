@@ -9,3 +9,4 @@ Dockerfile
 tmp/
 dist/
 portfolio
+*.pdf
